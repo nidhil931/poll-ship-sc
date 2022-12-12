@@ -1,0 +1,162 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "title_",
+						"type": "string"
+					},
+					{
+						"internalType": "string[]",
+						"name": "candidateNames_",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getPollInfo",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "title_",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getResults",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "voteCount",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Result[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "candidateName",
+						"type": "string"
+					}
+				],
+				"name": "getVoteCountFor",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "voteCount_",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "voter_",
+						"type": "address"
+					}
+				],
+				"name": "hasAlreadyVoted",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "hasVoted_",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "voter_",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "candidateName",
+						"type": "string"
+					}
+				],
+				"name": "vote",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Poll.sol": "Poll"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Poll.sol": {
+			"keccak256": "0x73c88ece958aa824281b711e44a0742758e5e720444a4a1d54e6f9164f9fb871",
+			"urls": [
+				"bzz-raw://49d5fa78545114a14a06217f05f532da2d9e9a0f528d3f247b6a3eabbf137edb",
+				"dweb:/ipfs/Qmc1HyatdFt3z1B539omExZTBCGAssA9T8vWMpntn4bhgP"
+			]
+		},
+		"types/types.sol": {
+			"keccak256": "0xcb542f134627bafbde650935d9c5ca72f2d440a4077850aed11278e10a3ee257",
+			"urls": [
+				"bzz-raw://57a54ea93380c305e214011d823448ae7d59a882986a2e4f90b7ff6c0b99cc59",
+				"dweb:/ipfs/QmaAKTzG1r1FNwZzn6dUDkSrJ4R7ncd7bY4Qw7QvfiNznC"
+			]
+		}
+	},
+	"version": 1
+}
